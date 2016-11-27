@@ -1,0 +1,44 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+canvas, .statement {
+    position: absolute;
+    top: 10vh;
+    width: 100vw;
+    height: 80vh;
+}
+.statement {
+    z-index: 100;
+    border-width: 0px;
+    background-color: rgba(255,255,255,0.9);
+}
+.title, .footer {
+    margin: 8px;
+    padding: 0px;
+}
+.title {
+    font-size: 0.8em;
+}
+.footer {
+    position: absolute;
+    bottom: 0px;
+}
+.name {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+ul, li {
+    list-style: none;
+}
+p, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    color: #757575;
+    text-decoration: none;
+}
+a:hover {
+    color: #cccccc;
+}
