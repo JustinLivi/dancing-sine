@@ -17,7 +17,6 @@
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "brinkbit-style-es6": "^1.0.3",
-    "eslint": "^3.11.0",
     "pre-commit": "^1.1.3",
     "webpack": "^1.13.3"
   },
