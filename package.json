@@ -1,6 +1,6 @@
 {
   "name": "justinlivi-dancing-sine",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Javascript port of original dancing sine java applet.",
   "main": "src/index.js",
   "scripts": {
