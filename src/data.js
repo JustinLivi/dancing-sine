@@ -3,6 +3,7 @@
 module.exports = {
     title: 'Dancing Sine',
     year: '2011',
+    uri: 'dancingsine',
     source: {
         owner: 'justinlivi',
         repo: 'dancing-sine',
@@ -10,8 +11,8 @@ module.exports = {
         embed: [
             {
                 type: 'js',
-                label: 'sketch.js',
-                path: 'src/sketch.js',
+                label: 'render.js',
+                path: 'src/render.js',
             },
         ],
     },

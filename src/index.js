@@ -1,6 +1,6 @@
 'use strict';
 
 const data = require( './data' );
-const sketch = require( './sketch' );
+const render = require( './render' );
 
-module.exports = { data, sketch };
+module.exports = { data, render };

@@ -1,4 +1,4 @@
 'use strict';
 
 const $ = require( 'jquery' );
-require( '../src' ).sketch( $( 'canvas' )[0]);
+require( '../src' ).render( $( 'canvas' )[0]);

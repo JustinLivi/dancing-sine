@@ -10,6 +10,7 @@ module.exports = function createSketch( canvas ) {
     const fpsInterval = 1000 / fps;
     const s = height / 3;
 
+    let stopped = false;
     let max;
     let now;
     let elapsed;
@@ -50,7 +51,12 @@ module.exports = function createSketch( canvas ) {
     function reset( percent ) {
         theta = -100;
         count += delta * percent;
-        if ( count > 718.7 || count < 360 ) {
+        if ( count > 718.7 ) {
+            count = 718.7;
+            delta *= -1;
+        }
+        else if ( count < 360 ) {
+            count = 360;
             delta *= -1;
         }
         y2 = Math.pow( Math.sin( theta ), 3 );
@@ -93,6 +99,7 @@ module.exports = function createSketch( canvas ) {
     }
 
     function animate() {
+        if ( stopped ) return;
         raf( animate );
         now = window.performance.now();
         elapsed = now - then;
@@ -111,4 +118,10 @@ module.exports = function createSketch( canvas ) {
 
     randomize();
     animate();
+
+    return {
+        stop: function stop() {
+            stopped = true;
+        },
+    };
 };
